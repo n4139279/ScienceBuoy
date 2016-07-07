@@ -1,4 +1,5 @@
 from pyonep import onep
+from Exosite_cik import *
 import os
 import pandas
 import urllib2
@@ -60,15 +61,18 @@ def shutdown_pi():
 ###############################################################
 
 o = onep.OnepV1()
-cik = '455954b2b6e787bc71fad187e4471f51700fb191'
 
-# Define Resource IDs. These taken from Exosite portal
-Internal_temperature_ID = 'a51ea54054f6022c358e864754b7d7a5248f2882'
-Internal_pressure_ID    = 'cc34f7c02f9e34d16d7d267ae96369673ff13996'
-Internal_humidity_ID    = 'fa31fa50c9c26bbbd07ba6ca320b2b71bc8dc024'
-Heading_ID              = '182fb79e005f000f5684e483386556ea691786d7'
-LedButton_ID			= '3d74c43d13657213672ba8388be9be176ddcfced'
-KeepAliveButton_ID		= '3bc33f276f33affaabab988389bde2b11c6c910a'
+## Define Resource IDs. These taken from Exosite portal
+## All IDs are imported from Exosite_cik.py to ensure privacy
+## of sensitive codes. 
+##
+# cik = '# Insert CIK #'
+# Internal_temperature_ID 	= '# Insert Resource ID #'
+# Internal_pressure_ID    	= '# Insert Resource ID #'
+# Internal_humidity_ID    	= '# Insert Resource ID #'
+# Heading_ID              	= '# Insert Resource ID #'
+# LedButton_ID				= '# Insert Resource ID #'
+# KeepAliveButton_ID		= '# Insert Resource ID #'
 
 Log_filename = 'ScienceBuoyDataLog.csv'
 # Check if the log file exists:
